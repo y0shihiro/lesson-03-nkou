@@ -1,0 +1,70 @@
+body {
+  font-family: "AxisStd-Light", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+/* ヘッダー */
+
+.header-top {
+  background-color: #f7f7f7;
+}
+
+.header-top-wrap {
+  width: 72%;
+  margin: 0 14%;
+}
+
+.header-top-wrap::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header-top-wrap p {
+  float: left;
+  font-size: 12.5px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+  line-height: 2;
+}
+
+.header-top-wrap ul {
+  float: right;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.header-top-wrap ul li {
+  display: inline-block;
+}
+
+.header-top-wrap ul li:last-child {
+  background-image: url("../../images/icon_site_mark01.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 5% 50%;
+  background-color: #d9d9d9;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.header-top-wrap ul li a {
+  color: #676767;
+  padding: 5px 15px;
+}
+
+.header-top-wrap ul li:last-child a {
+  color: #000066;
+}
