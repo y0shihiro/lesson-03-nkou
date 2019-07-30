@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "AxisStd-Light", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
@@ -11,24 +15,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  /* display: block; */
+  max-width: 100%;
+}
+
 /* ヘッダー */
 
 .header-top {
   background-color: #f7f7f7;
 }
 
-.header-top-wrap {
+.container {
   width: 72%;
   margin: 0 14%;
 }
 
-.header-top-wrap::after {
+.clear-flex::after {
   content: "";
   clear: both;
   display: block;
 }
 
-.header-top-wrap p {
+.header-top__title {
   float: left;
   font-size: 12.5px;
   font-weight: bold;
@@ -37,34 +46,68 @@ a {
   line-height: 2;
 }
 
-.header-top-wrap ul {
+.login {
   float: right;
+  display: inline-block;
+  background-image: url("../../images/icon_site_mark01.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10% 50%;
+  background-color: #d9d9d9;
+  font-size: 12px;
+  line-height: 2;
+  padding: 5px 15px 5px 30px;
+  color: #000066;
+}
+
+.menu-row {
+  float: right;
+}
+
+.list {
+  display: flex;
   text-align: center;
   padding: 0;
   margin: 0;
   font-size: 12px;
   line-height: 2;
-}
-
-.header-top-wrap ul li {
   display: inline-block;
 }
 
-.header-top-wrap ul li:last-child {
-  background-image: url("../../images/icon_site_mark01.png");
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: 5% 50%;
-  background-color: #d9d9d9;
-  font-weight: bold;
-  padding-left: 10px;
-}
-
-.header-top-wrap ul li a {
-  color: #676767;
+.list__item {
+  display: inline-block;
   padding: 5px 15px;
+  position: relative;
 }
 
-.header-top-wrap ul li:last-child a {
-  color: #000066;
+.item__link {
+  color: #676767;
+}
+
+.item__link::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-image: url("../../images/header01_intro_nav01_bg01.png");
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.item__link--last::after {
+  background-image: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 220px;
 }
