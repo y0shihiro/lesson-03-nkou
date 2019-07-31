@@ -13,12 +13,22 @@ ul {
 a {
   display: block;
   text-decoration: none;
+  color: inherit;
 }
 
 img {
-  /* display: block; */
+  display: block;
   max-width: 100%;
 }
+
+.menu-list {
+  display: flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
 
 /* ヘッダー */
 
@@ -60,31 +70,26 @@ img {
   color: #000066;
 }
 
-.menu-row {
+.header-top__nav {
   float: right;
 }
 
-.list {
-  display: flex;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+.menu-list-small {
   font-size: 12px;
   line-height: 2;
-  display: inline-block;
 }
 
-.list__item {
+.menu-list-small__item {
   display: inline-block;
   padding: 5px 15px;
   position: relative;
 }
 
-.item__link {
+.menu-list-small__link {
   color: #676767;
 }
 
-.item__link::after {
+.menu-list-small__link::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -98,7 +103,7 @@ img {
   transform: translateY(-50%);
 }
 
-.item__link--last::after {
+.menu-list-small__link--last::after {
   background-image: none;
 }
 
@@ -109,5 +114,47 @@ img {
 }
 
 .header-logo {
-  width: 220px;
+  width: 210px;
 }
+
+.tel__logo {
+  margin: 20px 25px 0 0;
+  max-width: 210px;
+}
+
+.tel__info {
+  font-size: 12px;
+  margin: 5px 31px;
+  color: #8d959c;
+}
+
+.sns-circle {
+  margin-top: 20px;
+}
+
+.sns-circle__icon {
+  padding-left: 8px;
+}
+
+.menu-list-large__item {
+  padding: 0 40px;
+}
+
+.fw-b {
+  font-weight: bold;
+  font-size: 10px;
+  color: #8d959c;
+}
+
+.fw-b:hover {
+  color: #000066;
+}
+
+.fw-b--current {
+  color: #000066;
+}
+
+.menu-list-large__item--current {
+  color: #000066;
+}
+
