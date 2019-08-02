@@ -250,11 +250,11 @@ img {
   color: #181836;
 }
 
-.top-wrap {
+.main-title {
   height: 540px;
 }
 
-.main-title {
+.main-title__text {
   height: 100%;
   background-image: url("../../images/about_mainimage01.jpg");
   background-size: cover;
@@ -272,7 +272,7 @@ img {
   vertical-align: bottom;
 }
 
-.main-title::before {
+.main-title__text::before {
   content: "";
   width: 200px;
   height: 1px;
@@ -283,7 +283,7 @@ img {
   left: 43%;
 }
 
-.main-title::after {
+.main-title__text::after {
   content: "";
   width: 150px;
   height: 25px;
