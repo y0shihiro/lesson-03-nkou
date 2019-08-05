@@ -32,6 +32,13 @@ img {
 .container {
   width: 72%;
   margin: 0 14%;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ヘッダー */
@@ -105,12 +112,6 @@ img {
 
 .menu-list-small__link--last::after {
   background-image: none;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header-logo {
@@ -364,13 +365,13 @@ img {
   margin-top: 40px;
 }
 
-.feature__title {
+.emphasis__title {
   font-size: 27px;
   font-weight: normal;
   margin-bottom: 10px;
 }
 
-.feature__title::after {
+.emphasis__title::after {
   content: "";
   display: block;
   width: 100%;
@@ -380,12 +381,12 @@ img {
   margin-top: 15px;
 }
 
-.feature__item-title,
-.feature__item-text {
+.emphasis__item-title,
+.emphasis__item-text {
   display: inline-block;
 }
 
-.feature__item-title {
+.emphasis__item-title {
   font-size: 24px;
   font-weight: normal;
   border-right: 1px solid #000;
@@ -397,12 +398,12 @@ img {
   margin-right: 24px;
 }
 
-.feature__item-text {
+.emphasis__item-text {
   font-size: 20px;
   padding-left: 10px;
 }
 
-.feature__image {
+.emphasis__image-triangle {
   width: 650px;
   margin-right: -180px;
   margin-top: 25px;
@@ -448,7 +449,6 @@ img {
   letter-spacing: 0.05em;
   line-height: 1.8;
   text-align: justify;
-  margin-bottom: 35px;
 }
 
 .read-more {
@@ -458,5 +458,182 @@ img {
   background-image: url("../../images/icon_arrow01_right_black01.png");
   background-repeat: no-repeat;
   background-size: 5%;
+  margin-top: 35px;
 }
+
+.emphasis {
+  margin-bottom: 110px;
+}
+
+.emphasis-wrap {
+  margin-top: 70px;
+}
+
+.emphasis-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.emphasis__unit {
+  width: 47%;
+}
+
+.emphasis__lead {
+  font-size: 25.5px;
+  font-weight: normal;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.emphasis__lead::after {
+  content: "";
+  display: block;
+  background-image: url("../../images/line01_black01.png");
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+}
+
+.emphasis__text {
+  font-size: 16.5px;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
+.emphasis__text-small {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  margin: 10px 0;
+}
+
+.feature {
+  border-top: 1px solid #e2e2e2;
+}
+
+.feature--gray {
+  background-color: #f7f7f7;
+}
+
+.feature-wrap {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.feature-title {
+  font-size: 33px;
+  font-weight: normal;
+  position: relative;
+  padding: 20px 0;
+  margin: 15px 0;
+}
+
+.feature-title::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-image: url("../../images/line01_black01.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-text {
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.detail-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.detail-flex__row-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.detail-wrap {
+  margin-bottom: 110px;
+}
+
+.detail-link:hover {
+  opacity: 0.7;
+}
+
+.detail-link__right {
+  margin-left: 35px;
+}
+
+.detail-link__left {
+  margin-right: 35px;
+}
+
+.detail-title {
+  font-size: 22.5px;
+  font-weight: normal;
+  line-height: 1.8;
+}
+
+.basic-program::before {
+  content: "";
+  display: block;
+  background-color: #000;
+  width: 100px;
+  height: 25px;
+  background-image: url("../../images/text_basic_program01_white01.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 80%;
+}
+
+.advanced-program::before {
+  content: "";
+  display: block;
+  background-color: #000;
+  width: 125px;
+  height: 25px;
+  background-image: url("../../images/text_advanced_program01_white01.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 80%;
+}
+
+.detail-text {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.detail-text-tiny {
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.detail-text-small {
+  font-size: 13.5px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.detail-text__mgr-16 {
+  margin-right: 16px;
+}
+
+.detail-title--mgt-0 {
+  margin-top: 0;
+}
+
+.detail-image--special {
+  width: 720px;
+  height: auto;
+}
+
+
 
