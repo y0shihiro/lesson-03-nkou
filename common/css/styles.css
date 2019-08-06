@@ -119,12 +119,12 @@ img {
   margin-top: 5px;
 }
 
-.tel__logo {
+.header-tel__logo {
   margin: 20px 25px 0 0;
   max-width: 210px;
 }
 
-.tel__info {
+.header-tel__info {
   font-size: 12px;
   margin: 5px 31px;
   color: #8d959c;
@@ -545,13 +545,13 @@ img {
   letter-spacing: 0.03em;
 }
 
-.detail-flex {
+.flex-aifs {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.detail-flex__row-reverse {
+.flex-aifs__row-reverse {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -635,5 +635,247 @@ img {
   height: auto;
 }
 
+.link-square-large__list {
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 80px 0;
+}
 
+.link-square-large__item {
+  width: 47%;
+  height: 120px;
+  background-image: url("../../images/bg_diagonal01_black01.png");
+  padding: 5px;
+}
 
+.link-square-large__item--top {
+  height: 140px;
+  margin-bottom: 30px;
+}
+
+.link-square-large__link {
+  background-color: #fff;
+  height: 100%;
+  padding: 0 25px;
+  position: relative;
+}
+
+.link-square-large__link::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url("../../images/icon_arrow01_right_black01.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.link-square-large__link:hover {
+  opacity: 0.7;
+}
+
+.link-square-large__title {
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding-right: 35px;
+}
+
+.link-square-large__summary {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.iframe-wrap {
+  padding: 70px 0 190px 0;
+}
+
+.iframe {
+  width: 345px;
+  height: 200px;
+}
+
+.iframe-caption {
+  font-size: 14px;
+  padding-left: 60px;
+  margin: 0;
+}
+
+.information-top {
+  background-image: url("../../images/footer02_bg01.png");
+  color: #fff;
+}
+
+.information-top__wrap {
+  width: 550px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.information-top__title {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.information-top__item {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.information-top__item::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/icon_book01_black01.png");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.information-top__item::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../../images/icon_arrow01_right_black01.png");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.information-top__item:hover {
+  opacity: 0.7;
+}
+
+.information-top__link {
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  padding: 16px 0;
+}
+
+.information-top__left {
+  width: 250px;
+}
+
+.information-top__right {
+  width: 250px;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.information-top-tel__logo {
+  margin: 10px 0 0 0;
+}
+
+.information-top-tel__info {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.contact {
+  margin: 15px 0 15px 40px;
+}
+
+.contact__link {
+  font-size: 13px;
+  border: 1px solid #fff;
+  padding: 12px 13px;
+  position: relative;
+}
+
+.contact__link:hover {
+  text-decoration: underline;
+}
+
+.contact__link::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url("../../images/icon_arrow01_right_white01.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+.information-bottom {
+  padding: 60px 0;
+}
+
+.information-bottom-wrap {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.information-bottom__title {
+  font-size: 16.5px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.link-square-large__image--left::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-image: url("../../images/footer05_Njr.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-square-large__image--right::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-image: url("../../images/footer05_nepps.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-square-large__title--bottom {
+  font-size: 14px;
+  padding-top: 75px;
+  margin: 0;
+}
+
+.footer-link {
+  background-color: #f7f7f7;
+}
